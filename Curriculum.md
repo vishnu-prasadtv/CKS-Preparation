@@ -7,13 +7,13 @@ Starting from October 10, 2024, the Certified Kubernetes Security Specialist (CK
 
 ![image](https://github.com/user-attachments/assets/7edf95bb-82ab-4f7d-a859-9589f13cfa52)
 
-## Cluster Setup Domain Updates (Weightage Increased from 10% to 15%)
+## 1. Cluster Setup Domain Updates (Weightage Increased from 10% to 15%)
 
 The Cluster Setup domain sees a notable increase in its weight from 10% to 15%, indicating its growing importance in securing Kubernetes clusters.
 
 ![image](https://github.com/user-attachments/assets/3756c365-e32c-4186-8c6d-144842db0f86)
 
-## 1. Cluster setup Kubernetes exam updates
+### Cluster setup Kubernetes exam updates
 - **Network Security Policies**: The focus on configuring network security policies to restrict cluster-level access continues. This practice remains essential for isolating and protecting the Kubernetes cluster from unauthorized access.
 - **CIS Benchmarks**: Using CIS (Center for Internet Security) benchmarks to review the security configurations of key Kubernetes components (such as etcd, kubelet, kubeapi, and kubedns) is still a critical component of this domain. Adhering to these benchmarks ensures the cluster is secured according to industry standards.
 - **Ingress Setup with TLS**: One of the major updates is the emphasis on setting up ingress with Transport Layer Security (TLS). TLS is essential for encrypting data in transit and ensuring secure communication between services and clients.
