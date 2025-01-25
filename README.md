@@ -2,7 +2,6 @@
 
 ## Curriculum
 
-
 The Certified Kubernetes Security Specialist (CKS) certification is designed to validate an individual's knowledge and skills in securing Kubernetes clusters and applications. Below is a detailed breakdown of the CKS curriculum, including the specific topics and scenarios you should focus on for each domain.
 
 ## 1. Cluster Setup (10%)
