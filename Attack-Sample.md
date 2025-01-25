@@ -4,6 +4,9 @@
 - In the elections between CATS and DOGS, Dogs have been winning elections for quite some time.
 - The cats team decides to hack the systems and announce Cats have won the election by a massive majority.
 
+![Uploading image.png…]()
+
+
 Data that is available publicly are:
 - Domains:
   - www.vote.com
