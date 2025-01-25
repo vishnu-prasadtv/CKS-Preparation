@@ -103,7 +103,7 @@ root@new-container:/#
 
 ![image](https://github.com/user-attachments/assets/716028be-caa8-4a65-8a88-f5cff43131af)
 
-- Now attacker downloads the Dirty-Cow exploit script:
+- Now the attacker downloads the Dirty-Cow exploit script:
 - And runs it to escape out of the container onto the underlying Host:
 
 ![image](https://github.com/user-attachments/assets/7fda2ccc-f622-4d5b-b101-6e1a4224bd9d)
@@ -118,4 +118,35 @@ root@new-container:/#
 
 ![image](https://github.com/user-attachments/assets/69f2753c-9d5f-45ae-a403-84aec33dc382)
 
-- Again on docker ps output it is seen that the containers are having K8s - Kubernetes dashboard ones: 
+- In the docker ps output shows that the containers include K8s - Kubernetes dashboard containers:
+
+![image](https://github.com/user-attachments/assets/39fcd5f5-dcff-4565-bf79-9d0043e6f785)
+
+- To identify the port associated with the K8s dashboard - the attacker can check the IPTables Nat chain
+- The port exposed is 30080.
+
+![image](https://github.com/user-attachments/assets/1f9084d7-817a-423a-9076-0f24f5703e8b)
+
+- The K8s dashboard is available in the URL 104.21.63.124:30080
+- The dashboard gives information about the entire cluster.
+
+![image](https://github.com/user-attachments/assets/976871b8-c1d9-4483-9420-bd154a8f5b84)
+
+- The results are saved in the db database, which contains the password details as environment variables:
+
+![image](https://github.com/user-attachments/assets/d5e81651-b823-4af7-8cf5-644227fae712)
+
+- Now the attacker identifies the database container and execs into it:
+
+![image](https://github.com/user-attachments/assets/05f63812-7559-42ad-9dd5-2dd0c52a0694)
+
+- Once in, the attacker uses the Username and password to connect to the DB
+![image](https://github.com/user-attachments/assets/e73a972a-00c1-4cfa-bbee-303e12f46a02)
+
+- Now she updates the votes of Doga and cats using the script
+
+![image](https://github.com/user-attachments/assets/0eeb8517-fb75-407c-8d54-c341b589fb01)
+
+- Now the results are successfully manipulated:
+
+![image](https://github.com/user-attachments/assets/68f2c1db-b2ed-4898-a41d-46b66965e5ad)
